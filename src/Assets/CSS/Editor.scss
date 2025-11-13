@@ -1,0 +1,107 @@
+.KotlinCodeEditor {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  font-family: lucida console, courier new, courier, monospace;
+  font-size: 1rem;
+  font-weight: 400;
+
+  .EditorHeader {
+    display: inline-flex;
+    width: 100%;
+    background: #3c3f41;
+    border-bottom: 1px solid #272822;
+
+    h2 {
+      width: calc(100% - 100px);
+      height: 50px;
+      padding-top: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    div {
+      width: 100px;
+      max-height: 50px;
+      padding: 15px;
+      overflow: hidden;
+    }
+
+  }
+
+  .EditorView {
+    width: 100%;
+    height: calc(100% - 140px);
+    //max-height: calc(100% - 120px);
+    background: #313335;
+    display: flex;
+    flex-direction: column;
+
+    .Editor {
+      min-height: 80%;
+      display: flex;
+
+      p {
+        height: 100%;
+        display: inline-flex;
+      }
+    }
+
+    .CodeOutput {
+      border: 1px solid #555555;
+      min-height: 20%;
+
+      p {
+        width: 100%;
+        text-align: left;
+        color: white;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+#codeEditor, #lineCounter {
+  font-family: lucida console, courier new, courier, monospace;
+  margin: 0;
+  padding: 10px 0;
+  height: 100%;
+  border-radius: 0;
+  resize: none;
+  font-size: 16px;
+  line-height: 1.2;
+  outline: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#codeEditor {
+  padding-left: 5px;
+  width:100%;
+  /* Determine appearance of code editor */
+  background-color:#2b2b2b;
+  border-color:#272822;
+  color:#ffffff;
+}
+
+#lineCounter {
+  display: flex;
+  overflow-y: hidden;
+  text-align: left;
+  padding-left: 5px;
+  box-shadow: none;
+  //position: absolute;
+  width: 3.5rem;
+  /* Determine appearance of line counter */
+  background-color:#313335;
+  border-color:#555555;
+  color:#928869;
+}
+
+#lineCounter:focus-visible,
+#codeEditor:focus-visible {
+  outline:none;
+}

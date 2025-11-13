@@ -1,0 +1,35 @@
+<svg width="800px" height="800px" viewBox="-2.4 -2.4 28.80 28.80" class="fill-gradient-radial2" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+	<defs>
+		<radialGradient id="radial">
+			<stop class="radial-stop1" offset="0%"></stop>
+			<stop class="radial-stop2" offset="100%"></stop>
+			<!--   <stop class="radial-stop3" offset="100%"></stop>-->
+		</radialGradient>
+		<style>
+
+			.radial-stop1 {
+			stop-color: #009c0f;
+			}
+
+			.radial-stop2 {
+			stop-color: #2f9e44;
+			}
+			.fill-gradient-radial2{fill: none;fill:url(#radial);}</style>
+	</defs>
+
+	<g id="SVGRepo_bgCarrier" stroke-width="0">
+
+		<rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" class="fill-gradient-radial2" strokewidth="0"/>
+
+	</g>
+
+	<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+
+	<g id="SVGRepo_iconCarrier">
+		<path d="M12 19V17.5V18" stroke="#ffffff" stroke-width="2.0" stroke-linecap="round"/>
+		<path d="M12 5V6.5V7" stroke="#ffffff" stroke-width="2.0" stroke-linecap="round"/>
+		<path d="M15 9.5C15 8.11929 13.6569 7 12 7C10.3431 7 9 8.11929 9 9.5C9 10.8807 10.3431 12 12 12C13.6569 12 15 13.1193 15 14.5C15 15.8807 13.6569 17 12 17C10.3431 17 9 15.8807 9 14.5" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+	</g>
+
+</svg>

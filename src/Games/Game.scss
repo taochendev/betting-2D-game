@@ -1,0 +1,515 @@
+
+
+.GameTabs {
+    width: 100%;
+}
+
+.GameTabs .Header {
+    width: 100%;
+    min-height: 100px;
+}
+
+.GameTabs .tab-panes-container {
+    width: 100%;
+    display: inline-flex;
+    border-radius: 50px;
+    margin: 10px;
+    margin-top: 25px;
+}
+
+.GameTabs .Header {
+    width: 100%;
+    min-height: 100px;
+}
+
+.GameTabs .TabHeading {
+    font-size: 90px;
+    padding-right: 150px;
+}
+
+.GameTabs .dicetab-list {
+    width: 100%;
+    font-weight: 600;
+    padding: 0 !important;
+    touch-action: manipulation;
+    position: relative;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    height: 55px;
+    align-items: center;
+    transition: background 300ms ease 0s, opacity 300ms ease 0s, transform 100ms ease 0s;
+    color: rgb(132, 136, 155);
+    background: #0e0e19;
+    border-top-left-radius: 10px;
+    box-shadow: none;
+}
+
+.GameTabs .dicetab-list-item img {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.GameTabs .dicetab-list-item span {
+    font-size: 0.875rem !important;
+}
+
+.GameTabs .dicetab-list-item {
+    flex: 1 1 0%;
+    padding: 35px;
+    line-height: 1;
+    height: 35px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(132, 136, 155, .2);
+}
+
+.GameTabs .dicetab-list-item:hover {
+    color: rgba(255, 157, 0, .8);
+}
+
+.GameTabs .dicetab-list-item:last-child {
+    width: 50px;
+}
+
+.GameTabs .dicetab-list-active:last-child {
+    border-top-right-radius: 10px !important;
+    width: 50px;
+}
+
+.GameTabs .dicetab-list-active:first-child {
+}
+
+.GameTabs .dicetab-list-active {
+    border-width: 1px 1px 0 1px;
+    color: rgb(255, 157, 0);
+    border-bottom: 2px solid rgb(255, 157, 0);
+}
+
+.GameContent {
+    width: 100%;
+    display: inline-flex;
+    /* align-items: center; */
+    height: 100%;
+    padding: 0;
+    max-width: 1370px;
+    position: relative;
+    /*border-top-left-radius: 10px;*/
+    background: rgba(13, 14, 32, 0.8);
+}
+
+.GameContent li {
+    list-style: none;
+}
+
+.GameContent .Small {
+    width: 30%;
+    /* max-width: 400px; */
+}
+
+.GameContent .Large {
+    width: 70%;
+}
+
+.GameContent .Full {
+    width: 100% !important;
+}
+
+.GameCanvas {
+    /* background: rgba(14, 14, 25, 0.84); */
+    width: calc(100% - 30px);
+    margin: 0 !important;
+    margin-top: 5px !important;
+    border-bottom-left-radius: 5px;
+    padding: 0 15px;
+    height: 100%;
+
+    .AmountField .ValueDropdown {
+      padding: 0;
+      width: calc(100%);
+
+      select {
+        width: 100%;
+        border: none;
+        padding: 0;
+        margin: 0;
+        background: transparent;
+        color: white;
+        padding-left: 10px;
+        height: 25px;
+      }
+    }
+
+    input {
+        background: none;
+        border: none;
+    }
+
+    .CanvasRow .ThresholdList {
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .CanvasRow .ThresholdList .Threshold {
+        cursor: pointer;
+        background: rgba(13, 20, 38, .6);
+        border: 1px solid rgba(155, 159, 174, .1);
+        margin: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        width: 33%;
+        text-align: left;
+        width: 100%;
+        text-align: left;
+        color: rgb(155, 159, 174);
+        transition: all 200ms ease-out 0s;
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 0px;
+    }
+
+    .CanvasRow .ThresholdList .ThresholdRow .ThresholdActionContainer {
+        background: rgba(255, 255, 255, 0.1);
+        width: 100%;
+        border-radius: 5px;
+        margin: 2px;
+        height: 45px;
+        text-align: center;
+        padding-top: 10px;
+        display: inline-flex;
+    }
+
+    .CanvasRow .ThresholdList .ThresholdRow .ThresholdAction {
+        width: calc(100% - 50px);
+    }
+
+    .CanvasRow .ThresholdList .ThresholdRow .ThresholdActionIcon {
+        width: 20px;
+        margin-left: 20px;
+    }
+
+    .CanvasRow .ThresholdList .ThresholdRow {
+        width: 100%;
+    }
+
+    .CanvasRow .RollDiceCanvas {
+        width: 100%;
+    }
+
+    .CanvasRow {
+        width: 100%;
+    }
+
+    .RowHeader {
+        width: 100%;
+        display: inline-flex;
+        text-align: left;
+        margin: 0px 0px 0.25em;
+        color: rgb(155, 159, 174);
+        transition: all 200ms ease-out 0s;
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 0px;
+        user-select: none;
+    }
+
+    .RowHeader .Left {
+        width: 50%;
+        float: left;
+    }
+
+    .RowHeader .Right {
+        width: 50%;
+        text-align: right;
+        display: inline-flex;
+        justify-content: right;
+    }
+
+    .ActionMini {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        font-weight: 600;
+        font-size: inherit;
+        text-transform: uppercase;
+        border-radius: 5px;
+        touch-action: manipulation;
+        position: relative;
+        display: inline-flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        transition: background 300ms ease 0s, opacity 300ms ease 0s, transform 100ms ease 0s;
+        line-height: 1.5;
+        background: rgba(132, 136, 155, 0.2);
+        color: rgb(132, 136, 155);
+        padding: 2px;
+        margin-left: 5px;
+        user-select: none;
+    }
+
+    .ActionMini svg {
+        color: rgba(132, 136, 155, .7);
+    }
+
+    .ActionMini:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .ActionMini:hover svg {
+        color: rgba(132, 136, 155, 1);
+    }
+
+    .CanvasField {
+        width: 100%;
+        height: 65px;
+    }
+
+    .AmountField {
+        width: 100%;
+        height: 65px;
+        background: rgba(13, 20, 38, .6);
+        border: 1px solid rgba(155, 159, 174, .1);
+        border-radius: 5px;
+        display: inline-flex;
+    }
+
+    .AmountField .Currency {
+        /*height: 50px !important;*/
+        margin: 0 !important;
+        width: 25px;
+        height: 25px;
+        margin-left: 10px !important;
+    }
+
+    .AmountField .Value {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        margin: 3px 2px;
+        height: 45px;
+        text-align: center;
+        padding-top: 15px;
+        display: inline-flex;
+    }
+
+    .AmountField .AutoValue {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        margin: 2px;
+        height: 45px;
+        text-align: center;
+        padding-top: 10px;
+        display: inline-flex;
+    }
+
+    .AmountField .AutoActionValue {
+        width: calc(100% - 150px);
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        margin: 2px;
+        height: 45px;
+        text-align: center;
+        padding-top: 10px;
+        display: inline-flex;
+    }
+
+    .AmountField .AutoActionValue img {
+        margin-top: 4px !important;
+        height: 16px;
+    }
+
+    .AmountField .ValueDivider {
+        width: 1px !important;
+        max-width: 1px !important;
+        margin-top: 10px;
+        height: 40px;
+        border: 1px solid #2b2f41;
+    }
+
+    .AmountField .Action {
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        font-weight: 600;
+        font-size: inherit;
+        text-transform: uppercase;
+        border-radius: 5px;
+        touch-action: manipulation;
+        position: relative;
+        display: inline-flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        transition: background 300ms ease 0s, opacity 300ms ease 0s, transform 100ms ease 0s;
+        line-height: 1.5;
+        color: rgb(132, 136, 155);
+        padding: calc(0.5em + 2px) 1em;
+        user-select: none;
+    }
+
+    .AmountField .Action:hover {
+        background: rgba(255, 255, 255, 0.1);
+        margin-top: 4px;
+        height: 40px;
+    }
+
+    .AmountField .AutoAction:hover {
+        background: rgba(255, 255, 255, 0.1);
+        margin-top: 2px;
+        height: 45px;
+    }
+
+    .AmountField .AutoAction {
+        cursor: pointer;
+        width: 80px;
+        height: 50px;
+        font-weight: 600;
+        font-size: 12px;
+        border-radius: 5px;
+        touch-action: manipulation;
+        position: relative;
+        white-space: nowrap;
+        display: inline-flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        transition: background 300ms ease 0s, opacity 300ms ease 0s, transform 100ms ease 0s;
+        line-height: 1.5;
+        color: rgb(132, 136, 155);
+        padding: calc(0.5em + 2px) 1em;
+    }
+
+    .AmountField .SelectedAction {
+        margin: 2px;
+        height: 45px;
+        background: rgba(255, 255, 255, 0.1) !important;
+    }
+
+    .AmountField input[type="number"] {
+        border-bottom: none !important;
+        font-size: 14px !important;
+        text-align: center;
+        width: 100% !important;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 5px;
+        touch-action: manipulation;
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        transition: background 300ms ease 0s, opacity 300ms ease 0s, transform 100ms ease 0s;
+        line-height: 1.0;
+        color: rgb(132, 136, 155);
+        padding: calc(0.5em + 2px) 1em;
+        padding-top: 5px;
+    }
+
+    .AmountField .ValueIcon {
+        width: calc(100% - 50px);
+        height: 50px;
+    }
+
+    .AmountField .IconValue {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        margin: 2px;
+        height: 45px;
+        text-align: center;
+        font-weight: 600;
+        font-size: inherit;
+        text-transform: uppercase;
+        border-radius: 5px;
+        touch-action: manipulation;
+        position: relative;
+        display: inline-flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        transition: background 300ms ease 0s, opacity 300ms ease 0s, transform 100ms ease 0s;
+        line-height: 1.5;
+        color: rgb(132, 136, 155);
+        padding: calc(0.5em + 2px) 1em;
+    }
+
+    .AmountField .IconValue .ProfitValue {
+        width: calc(100% - 50px);
+    }
+
+    .AmountField .IconValue .ProfitCurrency {
+        width: 50px;
+    }
+
+    .AmountField .IconValue img {
+        float: right;
+    }
+
+    .AmountField .Icon {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+.RollDiceCanvas {
+    button {
+        font-weight: 600;
+        font-size: inherit;
+        height: 50px;
+        border-radius: 5px;
+        touch-action: manipulation;
+        position: relative;
+        display: inline-flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        transition: background 300ms ease 0s, opacity 300ms ease 0s, transform 100ms ease 0s;
+        line-height: 1.5;
+        color: rgb(255, 255, 255);
+        background: rgb(255, 157, 0) !important;
+        box-shadow: none;
+        max-width: unset !important;
+        padding: calc(1em + 2px);
+        margin-left: 10px;
+        width: calc(100% - 20px) !important;
+        min-width: max-content;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .Disabled {
+        background: rgba(255, 157, 0, 0.5) !important;
+    }
+}
+
+@media (max-width: 1250px) {
+    
+    .GameContent {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 950px) {
+    .GameContent {
+        .Large {
+            width: 100%;
+            max-width: none;
+        }
+    }
+}

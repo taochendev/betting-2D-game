@@ -1,0 +1,176 @@
+.Settings-Modal {
+  min-height: 350px;
+
+  h2, h3 {
+    text-transform: uppercase;
+    color: #cee6fb;
+    font-style: italic;
+  }
+
+  .Tabbing  {
+    list-style: none;
+    display: inline-flex;
+    text-transform: uppercase;
+    color: #cee6fb;
+    font-style: italic;
+    font-weight: 800;
+
+    li {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      padding: 5px 0;
+      cursor: pointer;
+    }
+
+    .Active {
+      border-bottom: 1px solid #277de7;
+    }
+  }
+
+  .Profile-Username {
+    width: 100%;
+    height: 40px;
+
+    span{
+      color: rgba(206, 230, 251, 0.5);
+    }
+  }
+
+  .Profile-Details {
+    width: 100%;
+    height: 110px;
+    display: inline-flex;
+    border-bottom: 1px solid rgba(60, 65, 82, .5);
+    margin-bottom: 10px;
+
+    .Profile-image {
+      width: 100px;
+
+      img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .Profile-values {
+      width: calc(100% - 300px);
+      height: 100px;
+      padding: 0 25px;
+      color: rgba(206, 230, 251, 0.5);
+
+
+      ul {
+        list-style: none;
+        font-size: 14px;
+
+        li:nth-child(2) {
+          padding: 20px 0;
+        }
+      }
+    }
+    .Profile-points {
+      width: 200px;
+      height: 100px;
+      position: relative;
+
+      .Points-container {
+        background: #2b2f3d;
+        background: #101115;
+        //border: 1px solid rgb(60, 65, 82);
+        border-radius: 5px;
+        padding: 10px;
+        width: calc(100% - 20px);
+        display: inline-flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0px;
+
+        img {
+          width: 20px;
+        }
+
+      }
+    }
+  }
+
+
+  .Profile-raffles-and-points {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+
+    .Profile-settings-metric {
+      background: #101115;
+      //border: 1px solid rgb(60, 65, 82);
+      border-radius: 5px;
+      padding: 10px;
+      width: calc(32% - 20px);
+      display: inline-flex;
+
+      .Icon {
+        width: 40px;
+
+        img {
+          width: 40px;
+        }
+      }
+
+      .Value {
+        width: calc(100% - 40px);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        span:nth-child(2) {
+          font-weight: 800;
+          padding-top: 10px;
+
+        }
+      }
+
+    }
+  }
+
+  .Form-input {
+    width: 100% !important;
+
+    h5 {
+      cursor: pointer;
+    }
+  }
+
+  .Valid-field {
+    background: rgba(0, 255, 34, 0.18) !important;
+    border: 1px solid rgba(0, 255, 34, 0.8) !important;
+  }
+  .Invalid-field {
+    background: rgba(255, 0, 0, 0.18) !important;
+    border: 1px solid rgba(255, 0, 0, 0.8) !important;
+  }
+
+  .Field-title {
+    padding: 10px 0;
+  }
+
+  .Form-submission {
+    button {
+      width: calc(100% - 0px);
+    }
+  }
+
+
+  .Form-input {
+    background-color: #101115 !important;
+    display: inline-flex;
+    padding: 10px;
+
+    input {
+      background: none;
+      border: none;
+      color: white;
+      padding: 0 10px;
+      width: calc(100% - 20px);
+      outline: none !important;
+    }
+  }
+}

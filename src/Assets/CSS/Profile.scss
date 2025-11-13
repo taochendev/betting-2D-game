@@ -1,0 +1,489 @@
+.ProfileView {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .Balance {
+        width: 100%;
+        height: 90px;
+        background: #15182f;
+        display: inline-flex;
+        border-bottom: 1px solid #2e3240;
+
+        .Icon {
+            width: 120px;
+            background: #060a20;
+            border-right: 1px solid #2a2e38;
+
+            img {
+                height: 40px;
+                padding: 25px 0px;
+            }
+        }
+
+        .Amount {
+          width: calc(100% - 120px);
+          font-family: RuneScape;
+          color: white;
+          font-size: 28px;
+          line-height: 90px;
+        }
+    }
+
+    .ViewSelection {
+        width: 100%;
+        padding: 20px 0 20px 0;
+    }
+
+    .CurrentView {
+        width: 100%;
+        padding: 10px 0;
+
+        button {
+          background: rgb(81,50,205);
+          background: linear-gradient(119deg, #5b18a5 0%, #831ee9 100%);
+          font-family: "Noto Sans", "Inter", "Poppins", "Montserrat", "Helvetica", "Arial", sans-serif;
+          border: none;
+          color: white;
+          height: 45px;
+          margin-top: 5px;
+          padding: 0px 5px;
+          min-width: 75px;
+          border-radius: 0.375rem;
+          position: relative;
+          font-weight: 700;
+          font-size: 0.975rem;
+          user-select: none;
+          text-decoration: none;
+          cursor: pointer;
+          appearance: none;
+          box-sizing: border-box;
+          display: flex;
+          -webkit-box-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          align-items: center;
+          transform: scale(1);
+          transition: transform 0.08s ease 0s;
+          box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.12),0px 4px 4px 0px rgba(0,0,0,0.14),0px 4px 3px 0px rgba(0,0,0,0.02);
+          }
+    }
+}
+
+.Current-Tier-Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  .Current-Tier {
+    width: 700px;
+    max-width: 100%;
+
+    .Current-Tier-Info {
+      display: inline-flex;
+      width: 700px;
+      max-width: 100%;
+
+      .Current-Tier-Image {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 100px;
+        }
+      }
+
+      .Current-Tier-Content {
+        width: 500px;
+        color: white;
+        margin-top: 20px;
+        .Current-Tier-Title {
+          font-size: 42px;
+          text-transform: uppercase;
+          font-style: italic;
+
+          h4 {
+            width: 100%;
+            text-align: left;
+          }
+        }
+
+        .Current-Tier-Description {
+          p {
+            width: 100%;
+            text-align: left;
+            font-size: 14px;
+            padding-top: 10px;
+          }
+        }
+      }
+
+    }
+  }
+  .Current-Tier-Claim {
+    width: 700px;
+    max-width: 100%;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+
+    button {
+      height: 30px;
+      padding: 0 25px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+}
+.OSRSAccount {
+    width: 1000px;
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    .OSRSAccountsBar {
+      align-items: center;
+      background: #2f333a;
+      border-radius: 20px !important;
+      //box-shadow: 0 2px 1px -1px #0003,0 4px 4px 0 #00000024,0 4px 7px 0 #0000001f;
+      color: #9e9e9e;
+      display: flex;
+      flex-direction: row;
+      font-family: Noto Sans,Inter,Poppins,Montserrat,Helvetica,Arial,sans-serif;
+      font-weight: 400;
+      height: 50px;
+      justify-content: right;
+      line-height: 1.5;
+      list-style: none;
+      margin: 10px 0 0;
+      max-width: 1000px;
+      width: 100%;
+
+      select {
+          background: none;
+          border: none;
+          color: white;
+          font-weight: 800;
+          width: 200px;
+          margin-right: 20px;
+        font-size: 22px !important;
+          font-family: RuneScape;
+      }
+    }
+
+  .OSRSAccountsBarExpanded {
+    max-width: unset !important;
+  }
+
+    .OSRSAccountSection {
+      align-items: center;
+      background: #2f333a;
+      border-radius: 20px !important;
+      box-shadow: 0 2px 1px -1px #0003,0 4px 4px 0 #00000024,0 4px 7px 0 #0000001f;
+      color: #9e9e9e;
+      display: flex;
+      flex-direction: column;
+      font-family: Noto Sans,Inter,Poppins,Montserrat,Helvetica,Arial,sans-serif;
+      font-weight: 400;
+      justify-content: right;
+      line-height: 1.5;
+      list-style: none;
+      margin: 10px 0 0;
+      max-width: 1000px;
+      width: 100%;
+
+      .OSRSAccountSectionExpandedHeader {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        a:first-child {
+          cursor: pointer;
+        }
+
+        a {
+          line-height: 50px;
+          padding: 10px 5px 10px 10px;
+        }
+      }
+
+      .Loader-bar-space {
+          width: 100%;
+          display: flex;
+          justify-content: center
+      }
+
+      .Heading {
+          width: 100%;
+          display: inline-flex;
+          background: none;
+          border: none;
+          color: white;
+          font-family: Helvetica;
+           img {
+               width: 35px;
+               margin: 0 0 0 15px;
+               padding: 5px;
+           }
+
+       h3 {
+          font-weight: 800;
+          padding: 15px 5px 10px 10px;
+            font-size: 24px !important;
+           }
+       span {
+//             border-left: 1px solid red;
+            font-size: 16px !important;
+            padding-top: 23px;
+            padding-left: 10px;
+            color: #cecece;
+           }
+      }
+    }
+  .OSRSAccountSectionGames {
+    max-width: 1370px;
+  }
+}
+.OSRSAccountGames {
+  width: 95% !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: unset;
+}
+
+.BiggestWins-List {
+    width: 100%;
+    display: inline-flex;
+    -ms-overflow-style: none;
+      box-sizing: initial;
+      display: inline-flex;
+      justify-content: left;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      scrollbar-width: none;
+
+    .BiggestWin-Entry {
+        min-width: 380px;
+        min-height: 290px;
+        background: red;
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 0 20px 20px 20px;
+
+        .EntryPic {
+            width:100%;
+            height: 155px;
+            background: yellow;
+        }
+
+        .EntryValue {
+            width:100%;
+            display: inline-flex;
+            background: cyan;
+            ul {
+                width: 33%;
+                height: 135px;
+                list-style: none;
+            }
+        }
+    }
+}
+
+.DDAchievements {
+    width: 100%;
+
+    .DDAchievements-Tabs {
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+
+        ul {
+            width: 100%;
+            max-width: 900px;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+
+            li {
+                width: 33%;
+                height: 40px;
+                text-transform: uppercase;
+                border-bottom: 3px solid #9e9e9e;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            li.Active {
+                border-bottom: 3px solid #00c3ff;
+                color: white;
+            }
+        }
+    }
+    .DDAchievements-Table {
+//         padding: 0 20px 20px 20px;
+    }
+    .DDAchievements-TimeFilter {
+        display: flex;
+        justify-content: center;
+        padding: 15px 5px 5px 5px;
+
+        ul {
+          -ms-overflow-style: none;
+          box-sizing: initial;
+          display: inline-flex;
+          justify-content: left;
+          overflow-x: scroll;
+          overflow-y: hidden;
+          scrollbar-width: none;
+            width: 85%;
+            max-width: 900px;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            background: #262931;
+            border-radius: 10px;
+            padding: 8px 0;
+
+            li {
+                min-width: 110px;
+                height: 40px;
+                text-transform: uppercase;
+                font-weight: 400;
+                cursor: pointer;
+                background: #30343e;
+                border-radius: 10px;
+                line-height: 40px;
+                margin: 0 5px;
+            }
+
+            li.Active {
+                background: #393d48;
+                font-weight: 500;
+                color: white;
+            }
+        }
+    }
+}
+
+.MuiTablePagination-actions {
+    display: inline-flex;
+
+    button {
+        background: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.MuiToolbar-root {
+    p, select {
+        color: white !important;
+    }
+}
+
+.ChallengeCompletedName {
+
+    ul {
+        display: inline-flex;
+        list-style: none;
+
+        li:last-child {
+            font-weight: 800;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: Helvetica;
+            line-height: 40px;
+            padding: 0 10px;
+        }
+    }
+
+    .image-container {
+          width:  40px;
+          height: 40px;
+          margin: 0 auto;
+          display: block;
+          border-radius: 50%;
+          overflow: hidden;
+    box-shadow: 0px 0px 15px -10px rgba(255, 255, 255, 0.9);
+
+        img {
+          width:  40px;
+        }
+    }
+
+}
+
+
+.spin-wrapper {
+  width: 100%;
+  height: 150px;
+  padding-top: 50px;
+  color: white;
+
+  .spinner {
+    height: 60px;
+    width: 60px;
+    border: 5px solid transparent;
+    border-top-color: red;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+  }
+}
+
+.spinner2 {
+  height: 60px;
+  width: 60px;
+  border: 5px solid transparent;
+  border-bottom-color: red;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    border-top-color: blue;
+    border-bottom-color: blue;
+  }
+  25% {
+    transform: rotate(90deg);
+    border-top-color: red;
+    border-bottom-color: red;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-top-color: orange;
+    border-bottom-color: orange;
+  }
+  75% {
+    border-top-color: green;
+    border-bottom-color: green;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top-color: blue;
+    border-bottom-color: blue;
+  }
+}
+
+@media (max-width: 940px) {
+  h3 {
+    font-weight: 600 !important;
+    padding: 15px 5px 10px 10px !important;
+    font-size: 20px !important;
+  }
+  select{
+    font-weight: 600 !important;
+    width: 120px !important;
+    margin-right: 5px !important;
+  }
+  .Heading {
+    img {
+      margin: 0px !important;
+      width: 25px !important;
+    }
+  }
+}

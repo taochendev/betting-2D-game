@@ -1,0 +1,622 @@
+$primaryColor: #886CFF;
+
+@media (max-width: 1680px) {
+    .Admin-header {
+        width: 0 !important;
+        overflow: hidden;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 1470px) {
+
+    .featuredItem {
+        min-width: 200px;
+    }
+
+    .featured {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1340px) {
+
+    .widgetSm, .chart-container {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    .homeWidgets {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 780px) {
+
+    .featuredItem {
+        min-width: 100% !important;
+    }
+
+    .featured {
+        flex-wrap: wrap;
+    }
+
+    .Mobile-navigation {
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .App-admin {
+        flex-direction: column;
+    }
+
+    .MobileNavBarHeader {
+        width: 100%;
+        height: 50px;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .Navigation-Items-Mobile {
+        visibility: visible;
+        width: unset;
+        height: unset;
+        overflow: unset;
+    }
+
+    .Navigation-Items-Visible {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+.homeWidgets {
+    display: flex;
+    flex-direction: column;
+}
+
+.recharts-wrapper {
+    height: 100% !important;
+    width: 100% !important;
+    }
+}
+
+@media (max-width: 1530px) {
+  .App-horizontal-nav {
+    p {
+      width: 0;
+      overflow: hidden;
+    }
+  }
+}
+@media (max-width: 1485px) {
+
+  .Streamer-List {
+    justify-content: left !important;
+  }
+}
+
+@media (max-width: 950px) {
+  .App-header {
+    .App-header-main {
+      .App-horizontal-nav {
+        height: 50px;
+        width: 100%;
+
+        a {
+          width: 25px;
+        }
+
+        li {
+          span {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+          }
+        }
+
+      }
+
+      .App-bar-right {
+        width: 260px !important;
+      }
+    }
+
+    .Leaderboard-header-button {
+      width: 70px !important;
+
+      .Leaderboard-content {
+        visibility: hidden;
+        width:  0 !important;
+        overflow: hidden !important;
+      }
+    }
+  }
+
+  .Content-container {
+    h2 {
+      font-size: 12vw !important;
+    }
+  }
+}
+
+@media (max-width: 845px) {
+  .App-horizontal-nav{
+    visibility: hidden;
+    width: calc(100% - 200px) !important;
+  }
+  .App-footer .Footer-Main .App-logo {
+    margin-top: 150px;
+  }
+  .Footer-Signature {
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+
+  .App-header-main {
+    width: 100% !important;
+
+    .App-horizontal-nav {
+      width: calc(100% - 300px) !important;
+      visibility: hidden !important;
+    }
+
+    .Leaderboard-header-button {
+      visibility: hidden;
+      width:  0 !important;
+    }
+
+
+        .User-details {
+
+          .Username {
+              justify-content: space-between;
+           }
+       }
+  }
+
+
+  .Leaderboard-Pedestal{
+    .Rankings {
+      display: flex;
+      flex-direction: column;
+
+      .Ranking, .Content {
+        left: 5px;
+        width: calc(100% - 20px) !important;
+
+        .User-icon {
+          img {
+            margin-left: 0 !important;
+          }
+        }
+      }
+      .Gold, .Silver, .Bronze {
+        height: 275px !important;
+      }
+    }
+  }
+
+  .Leaderboard-Pedestal-container {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+  }
+
+  .Leaderboard-Pedestal-container-mobile {
+    padding-top:  0 !important;
+    width: unset !important;
+    height: 400px !important;
+    visibility: unset !important;
+    overflow: unset !important;
+    display: flex;
+    flex-direction: column;
+    .Leaderboard-Pedestal {
+      max-width: 100%;
+      min-width: 100% !important;
+    }
+
+    .Leaderboard-btn {
+      width: calc(100% - 10px) !important;
+
+      a {
+        width: 60% !important;
+      }
+    }
+  }
+
+  .makeStyles-card-18, a {
+//     max-width: calc(100% - 0px) !important;
+  }
+
+  .Video-case {
+    width: 100%;
+  }
+
+  .Headline {
+    height: 130px !important;
+    padding: 50px 0 !important;
+
+    h3 {
+      width: 100% !important;
+      font-size: 44px !important;
+      padding: 0 !important;
+      text-align: center !important;
+      height: unset !important;
+      text-shadow: none !important;
+      filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+    }
+
+    h1 {
+      width: 100% !important;
+      font-size: 44px !important;
+      padding: 0 !important;
+      text-align: center !important;
+    }
+
+    p {
+      width: 100% !important;
+      padding: 0px 0 !important;
+      text-align: center !important;
+    }
+  }
+  .Background-img {
+    visibility: hidden;
+  }
+
+  .Vip-Rewards-List {
+    padding: 0 !important;
+    .Vip-Reward-Entry {
+      width: 90% !important;
+    }
+  }
+
+  .No-direction {
+    flex-direction: unset !important;
+  }
+
+  .Leaderboard-page-ped {
+    width: 0 !important;
+    height: 0 !important;
+    visibility: hidden !important;
+    overflow: hidden !important;
+  }
+
+  .Vip-rewards-Tab-items {
+    display: flex;
+    justify-content: center;
+    flex-direction: column !important;
+
+    .Reward {
+      width: 100%  !important;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 50px;
+    }
+  }
+
+  .Landing-heading h4 {
+    font-size: 48px !important;
+  }
+
+  .hero {
+    height: 900px !important;
+    overflow: hidden;
+  }
+
+  /** New design **/
+  .Footer-Main {
+    padding-top: 100px !important;
+  }
+
+  .Streamer-List {
+    display: grid !important;
+    flex-direction: column;
+    justify-content: center !important;
+    margin-top: -50px;
+  }
+
+  .Main-heading-larger {
+    font-size: 7.8vw !important;
+  }
+
+  .Main-heading-largest {
+    font-size: 12.8vw !important;
+  }
+
+  .Main-heading {
+    font-size: 7.8vw !important;
+    text-shadow: none !important;
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.45));
+  }
+
+  .Heading-Landing {
+    margin-top: 50px;
+  }
+
+  .Challengers {
+    margin-top: 100px;
+  }
+
+  button.GiveawayBtn {
+      min-height: 80px;
+  }
+  .Landing-Coins {
+
+    .Gold {
+      img {
+        left: -10px;
+        top: -20px;
+        width: 12% !important;
+        filter: blur(2px) !important;
+      }
+    }
+    .Silver {
+      img {
+        right: 0;
+        top: 250px;
+        width: 60px;
+      }
+    }
+
+    img {
+      width: 40%;
+      filter: blur(5px);
+      position: absolute;
+    }
+  }
+
+  .App-contents-container .Leaderboard-Pedestal-container .Leaderboard-Pedestal .Rankings .Ranking {
+    height: 225px !important;
+    margin: 0 !important;
+  }
+
+  .App-contents-container .Leaderboard-Pedestal-container .Leaderboard-Pedestal .Rankings .Ranking .Content {
+    min-width: calc(100% - 50px) !important;
+    max-width: calc(100% - 50px) !important;
+    left: 25px;
+
+    .User-info-container-gold {
+      height: 275px;
+    }
+
+    .User-icon {
+      left: -10px !important;
+      top: -25px !important;
+      width: 80px !important;
+      height: 80px !important;
+
+      img {
+        width: 80px !important;
+        height: 80px !important;
+      }
+    }
+  }
+
+  .Heading-Landing {
+    margin-top: 80px !important;
+  }
+
+  .Heading-Leaderboard-sub {
+    margin: 30px 0 !important;
+  }
+
+  .PreviousLeaderboard {
+    padding-left: 10px;
+  }
+
+  /** Leaderboard */
+  .App-contents-container .Leaderboard-Pedestal-container .Leaderboard-Pedestal {
+    height: 315px !important;
+  }
+
+  .Small-Large-btn {
+    width: 30%;
+    height: 50px !important;
+  }
+
+  .Pedestal-View-Number {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+    visibility: visible !important;
+
+    div  {
+      border-radius: 50%;
+      background: #0c0e12;
+      width: 50px;
+      height: 50px;
+      font-weight: 900;
+      font-size: 32px;
+      padding: 5px 5px 0 5px;
+      margin: 20px;
+      cursor: pointer;
+    }
+
+    .First {
+      border: 1px solid #f8ce46;
+      color: #f8ce46;
+    }
+
+    .Second {
+      border: 1px solid #bfbfbf;
+      color: #bfbfbf;
+    }
+
+    .Third {
+      border: 1px solid #c38142;
+      color: #c38142;
+
+    }
+
+    .First-Active {
+      color: #0c0e12;
+      background: #f8ce46;
+    }
+    .Second-Active {
+      color: #0c0e12;
+      background: #bfbfbf;
+    }
+    .Third-Active {
+      color: #0c0e12;
+      background: #c38142;
+    }
+
+  }
+  .Druk {
+    text-shadow: none !important;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  }
+
+  .Heading-Landing-2 {
+    margin-top: 300px;
+  }
+
+  .CardHover-video,
+  .CardHover-video:hover {
+    width: 300px !important;
+    min-width: 300px !important;
+    max-width: 300px !important;
+    .Card {
+      width: 300px !important;
+      min-width: 300px !important;
+      max-width: 300px !important;
+    }
+  }
+
+  .makeStyles-card-18, .jss18 {
+    width: 350px !important;
+//     min-width: 350px !important;
+    max-width: 350px !important;
+  }
+  .Leaderboard-container ul {
+    width: 100% !important;
+  }
+  .Leaderboard-container .Heading  {
+    width: 100% !important;
+
+  }
+
+
+  /** VIP **/
+
+  .Vip-Reward-Entry {
+    width: 90% !important;
+    margin-left: 5% !important;
+
+    .Icon {
+      width: 90px !important;
+    }
+
+    .Text {
+      white-space: nowrap;
+      display: flex;
+      flex-direction: column;
+      font-size: 15px !important;
+
+      .reward {
+        justify-content: left !important;
+      }
+    }
+
+    .Action {
+      display: flex;
+      justify-content: right;
+      padding-right: 20px;
+      text-transform: uppercase;
+
+      button {
+        max-width: 70px;
+        min-height: 50px;
+        margin-top: 0 !important;
+        min-width: 80px !important;
+      }
+    }
+  }
+    .Vip-Rewards-List-container {
+    padding-top: 0px !important;
+  }
+  .Current-Tier-Claim {
+    button {
+      height: 50px !important;
+      padding: 0 50px !important;
+      font-weight: 700 !important;
+      font-size: 18px;
+    }
+  }
+
+  .Current-Tier-Container .Current-Tier .Current-Tier-Info {
+    display: flex !important;
+    flex-direction: column;
+    max-width: 100%;
+
+    .Current-Tier-Image {
+      width: unset !important;
+      margin-bottom: 50px;
+    }
+
+    .Current-Tier-Content {
+      max-width: 100%;
+      width: 100% !important;
+
+      .Current-Tier-Title {
+        h4 {
+          text-align: center !important;
+        }
+      }
+      .Current-Tier-Description {
+        p {
+          text-align: center !important;
+          margin-bottom: 50px;
+          width: 90% !important;
+          padding-left: 5%;
+        }
+      }
+    }
+  }
+
+  .Tier-Progress-container {
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    visibility: hidden !important;
+  }
+  /** END OF VIP **/
+
+
+  /** CASINO **/
+
+
+  .Casino-coin1 {
+    height: 400px;
+    position: absolute;
+    top: 60px !important;
+    left: -360px !important;
+  }
+
+  .Casino-coin2 {
+    height: 250px !important;
+    position: absolute;
+    top: 650px !important;
+    right: -100px !important;
+  }
+
+  .Casino-card-Container {
+    padding-top: 120px !important;
+  }
+
+  .Casino-card {
+    width: 360px !important;
+  }
+
+  .PartnerList .Benefit {
+    margin-left: calc(10% + 45px) !important;
+  }
+  /** END OF CASINO **/
+
+}

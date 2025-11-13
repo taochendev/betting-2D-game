@@ -1,0 +1,83 @@
+
+.Hilo {
+  width: 100%;
+
+  .Large {
+      overflow: hidden;
+  }
+}
+
+.GameComponentDesktopResizable {
+    visibility: visible;
+    overflow: hidden;
+}
+
+.GameComponentMobileResizable {
+    visibility: hidden;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+
+
+@media (max-width: 950px) {
+
+    .GameComponentDesktopResizable {
+        visibility: hidden;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .GameComponentMobileResizable {
+        visibility: visible;
+        overflow: hidden;
+        width: unset;
+        height: unset;
+    }
+
+    .GameContent {
+        .Small {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+
+}
+
+.HiloCanvas {
+    width: 100%;
+    height: 100%;
+}
+
+.HiloForm {
+
+    .Less-visible {
+        opacity: 0.5 !important;
+    }
+
+    .HiLoField {
+        cursor: pointer;
+
+        ul  {
+            display: inline-flex;
+            width: 100%;
+            justify-content: center;
+            li {
+                padding: 0 5px;
+                color: white;
+                font-weight: 600;
+
+                svg {
+                    width: 20px;
+                    padding: 1px 0;
+                }
+            }
+        }
+    }
+    &.hover {
+        opacity: 0.5 !important;
+    }
+}

@@ -1,0 +1,87 @@
+@media (max-width: 725px) {
+
+  .ChallengeGrid {
+    display: flex;
+    justify-content: center;
+  }
+  .ChallengeCard {
+    max-width: 100% !important;
+  }
+
+}
+
+@media (max-width: 845px) {
+  .Challenge-list-header {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+  }
+  .ChallengeCard {
+    min-width: 100% !important;
+  }
+
+  .Challengers {
+    padding-top: 0 !important;
+    .Challenger {
+      display: flex !important;
+      flex-direction: column !important;
+      min-height: 250px;
+
+      .Challenger-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 100;
+
+        .Challenger-Name, .Challenger-Values {
+          width: 100%;
+          padding: 0 !important;
+
+          ul {
+            width: 33% !important;
+          }
+        }
+      }
+
+
+      .Challenger-Image {
+        margin-left: calc(50% - 60px);
+        //visibility: hidden;
+
+        img {
+          margin-top: -100px;
+        }
+      }
+      .Gold {
+        width: 95%;
+        margin-left: 2.5%;
+        min-height: 100px;
+        margin-top: -50px;
+        padding-top: 80px;
+      }
+
+      .Silver {
+        width: 90%;
+        margin-left: 5%;
+        min-height: 100px;
+        margin-top: -50px;
+        padding-top: 80px;
+      }
+
+      .Bronze {
+        width: 80%;
+        margin-left: 10%;
+        min-height: 100px;
+        margin-top: -50px;
+        padding-top: 80px;
+      }
+    }
+  }
+
+  .Timed-challenges {
+    justify-content: center;
+    max-width: 100%;
+    flex-direction: column;
+    display: unset !important;
+  }
+}

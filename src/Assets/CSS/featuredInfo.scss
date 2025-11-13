@@ -1,0 +1,771 @@
+$primaryColor: #886CFF;
+
+.homeWidgets {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+
+    h3 {
+        color: white;
+    }
+}
+
+.chart-container {
+    width: 49%;
+    margin-top: 25px;
+    background: rgba(18, 28, 38, .4);
+    border-radius: 10px;
+    border: 1px solid rgb(43, 53, 64);
+}
+
+.top-games {
+    width: 500px;
+    min-width: 600px;
+}
+
+.widgetLg {
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    padding: 0px;
+    margin-top: 20px;
+    background: rgba(18, 28, 38, .4);
+    border: 1px solid rgb(43, 53, 64);
+    border-radius: 10px;
+    color: rgb(242, 244, 245);
+}
+
+.widgetLgNoBG {
+    padding: 0px;
+    margin-top: 20px;
+    border: 1px solid rgb(43, 53, 64);
+    border-radius: 10px;
+    color: rgb(242, 244, 245);
+    width: 100%;
+}
+.widgetLg p, .widgetLg input {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.Metrics-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.featured {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .featuredItem {
+    flex: 1;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px 10px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+      background: rgba(18, 28, 38, .4);
+    color: white;
+    border: 1px solid rgb(43, 53, 64);
+      font-family: "Open Sans";
+  }
+
+.featuredItem:last-child {
+      margin-right: 0 !important;
+  }
+
+  .featuredItem:first-child {
+      margin-left: 0 !important;
+  }
+  .featuredTitle{
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+      font-family: Inter, sans-serif;
+      letter-spacing: 0.00735em;
+      color: rgb(242, 244, 245);
+  }
+  
+  .featuredMoneyContainer{
+      margin: 10px 0px;
+      display: flex;
+      align-items: center;
+  }
+  
+  .featuredMoney{
+      font-size: 30px;
+      font-weight: 600;
+  }
+  
+  .featuredMoneyRate{
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+  }
+  
+  .featuredIcon{
+      font-size: 14px;
+      margin-left: 5px;
+      color: green;
+  }
+  
+  .featuredIcon.negative{
+      color: red;
+  }
+  
+  .featuredSub{
+      font-size: 15px;
+      color: gray;
+  }
+
+.widgetSm{
+    margin: 25px 0;
+    max-width: 30%;
+    overflow: hidden;
+    flex: 1;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    padding: 20px 10px;
+    background: rgba(18, 28, 38, .4);
+    border: 1px solid rgb(43, 53, 64);
+    border-radius: 10px;
+    color: rgb(242, 244, 245);
+}
+
+.widgetSmTitle, .widgetLgTitle {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: Inter, sans-serif;
+    letter-spacing: 0.00735em;
+    text-align: left;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    color: white;
+}
+
+.widgetSmImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.widgetSmList{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 5px 10px;
+
+    ul {
+        list-style: none;
+        display: inline-flex;
+        width: 100%;
+        font-family: "Open Sans";
+        li {
+            width: 50%;
+            text-align: right;
+        }
+
+        li:first-child {
+            font-weight: 700;
+            text-align: left;
+        }
+    }
+}
+
+.widgetSmListItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.widgetSmUser{
+    display: flex;
+    flex-direction: column;
+}
+
+.widgetSmUsername{
+    font-weight: 600;
+}
+
+.widgetSmUserTitle{
+    font-weight: 300;
+}
+
+.widgetSmButton{
+    display: inline-flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    background-color: transparent;
+    outline: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: none;
+    font-family: Inter, sans-serif;
+    letter-spacing: 0.02857em;
+    min-width: 64px;
+    border-radius: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgb(43, 53, 64);
+    white-space: nowrap;
+    flex-shrink: 0;
+    color: rgb(242, 244, 245);
+    font-size: 14px;
+    padding: 0px 12px;
+    min-height: 32px;
+}
+
+.widgetSmIcon{
+    font-size: 16px !important;
+    margin-right: 5px;
+}
+
+.chart {
+    margin: 20px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.chartTitle {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: Inter, sans-serif;
+    letter-spacing: 0.00735em;
+    color: white;
+}
+
+
+.Btcs-table {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+
+    ul {
+        list-style: none;
+        display: inline-flex;
+        li {
+            width: 50%;
+        }
+    }
+
+    .Header {
+        background: #1b1d27;
+        padding: 20px;
+        font-weight: 800;
+    }
+
+    .Entry {
+        padding: 10px;
+        margin-top: 5px;
+        color: #9e9e9e;
+        background: #2a2e38;
+        font-weight: 800;
+        font-size: 18px;
+
+        li.Actions {
+            display: flex;
+            justify-content: center;
+            button {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .SelectedEntry {
+        background: #414961;
+    }
+
+}
+
+.Btcs-form {
+    width: 100%;
+    padding-bottom: 15px;
+
+    .Form-submission {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: left;
+
+        button {
+            margin-right: 20px;
+        }
+    }
+    .Form-submission-right {
+        justify-content: right;
+    }
+
+    .Form-input-field {
+        width: 100%;
+
+        h6 {
+            width: 100%;
+            text-align: left;
+            color: #c4c4c4;
+            padding: 15px 0 5px 15px;
+        }
+
+        .Form-input {
+            width: calc(100% - 30px);
+            display: inline-flex;
+            background-color: #2b2f3d;
+            border-radius: 5px;
+
+            img {
+                width: 25px;
+                padding: 15px;
+            }
+
+            input {
+                width: calc(100% - 35px);
+                border: none;
+                background: none;
+                color: white;
+                padding: 10px;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            h5 {
+                padding: 20px 10px;
+                color: #c4c4c4;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            height: 300px;
+            color: #acacac;
+            background: #1b1d27;
+            border: 1px solid #2a2e38;
+        }
+        textarea:focus {
+            outline: none;
+        }
+    }
+}
+
+/**
+Tabs
+ */
+
+.locker-tabs {
+    width: 100%;
+}
+.tab-list-mobile {
+    float: right;
+    margin: 10px;
+    background: none;
+    border: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.locker-tab-list {
+    margin: 0 10px 10px 10px;
+    width: calc(100% - 20px);
+    background-color: transparent;
+    border-bottom: solid 1px rgba(51, 51, 69, 0.3) !important;
+    z-index: 10;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.locker-tab-list-item img {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.locker-tab-list-item {
+    display: inline-flex;
+    white-space: nowrap;
+    margin-right: 20px;
+    list-style: none;
+    float: left;
+    //margin-top: -15px;
+    margin-left: 5px;
+    height: 44px;
+    width: 100px;
+    padding: 0 !important;
+    font-weight: 600;
+    font-size: 14px !important;
+    touch-action: manipulation;
+    position: relative;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    transition: background 300ms ease 0s, opacity 300ms ease 0s, transform 100ms ease 0s;
+    color: rgb(68, 68, 68);
+    cursor: pointer;
+    user-select: none;
+}
+
+.locker-tab-list-item:hover {
+    color: $primaryColor;
+}
+
+.locker-tab-list-active {
+    border-width: 1px 1px 0 1px;
+    border-bottom: solid 2px $primaryColor !important;
+    color: $primaryColor;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.locker-tab-content {
+}
+
+.ModalHeading {
+    padding-bottom: 15px;
+}
+
+.ModalSelect {
+    margin-top: 15px;
+}
+
+
+.ShuffleGiveaway-Media {
+    border-radius: 30px !important;
+}
+
+.GiveawayList {
+    padding: 15px 0px;
+    width: 100%;
+    font-family: "Open Sans";
+
+    .Giveaway-grid {
+        display: inline-flex;
+        justify-content: space-between;
+        justify-content: center;
+    }
+
+    .GiveawayHeading {
+        font-weight: 800;
+        font-size: 28px;
+        text-align: center;
+        font-style: italic;
+        color: white;
+        width: 100%;
+    }
+
+    .GiveawayContent {
+        position: relative;
+        width: 100%;
+        text-shadow: rgba(0, 0, 0, 0.245) 0px 0px 8px;
+
+        .Links {
+            width: 100%;
+            display: inline-flex;
+            justify-content: center;
+            padding: 20px 0;
+            color: white;
+
+            .StreamerLi {
+                display: inline-flex;
+                justify-content: left;
+                height: 40px;
+                width: 50%;
+                white-space: nowrap;
+                padding: 0;
+                margin: 0;
+
+                img {
+                    padding: 0;
+                    margin: 0;
+                    width: 30px;
+                }
+
+                p {
+                    padding: 12px 5px;
+                }
+            }
+            .StreamerLi:first-child {
+                width: 100px;
+            }
+            .StreamerLi:last-child {
+                width: 100px;
+                padding-left: 15px;
+            }
+        }
+
+        .GiveawayAction {
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px 4px;
+            text-align: center;
+            width: calc(100% - 10px);
+            display: inline-flex;
+            justify-content: center;
+            //border: 2px solid red;
+            color: $primaryColor;
+            background: linear-gradient(119deg, #5b18a5 0%, #831ee9 100%);
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 4px 4px 0px rgba(0, 0, 0, 0.14), 0px 4px 7px 0px rgba(0, 0, 0, 0.12);
+            color: white;
+            border-radius: 5px;
+            position: absolute;
+            bottom: -75px;
+            cursor: pointer;
+            min-height: 25px !important;
+            max-height: 25px !important;
+        }
+        .GiveawayAction:hover {
+            background: linear-gradient(119deg, #5b18a5 20%, #831ee9 100%);
+        }
+
+        ul:nth-child(3) {
+            li:first-child {
+                border-right: 1px solid rgba(255, 255, 255, 0.42) !important;
+            }
+            li {
+                margin-top: 10px;
+            }
+        }
+
+        .Watch-req-Timers {
+            width: 100%;
+            display: inline-flex;
+            justify-content: center;
+
+            .InlineUl {
+                display: inline-flex;
+                width: 200px;
+                text-transform: uppercase;
+
+                li {
+                    width: 100px;
+                    padding: 10px 20px !important;
+                    margin: 0 !important;
+
+                    img {
+                        padding: 0 5px;
+                    }
+                }
+
+                div {
+                    margin-top: 20px;
+                    height: 50px;
+                    width: 1px;
+                    border-right: 1px solid rgba(255, 255, 255, 0.5);
+                }
+            }
+
+            .Watch-req {
+                font-weight: 600;
+                width: 50px;
+                font-size: 14px;
+                color: white;
+                padding-top: 10px;
+            }
+
+        }
+        p {
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+        }
+        ul {
+            width: 100%;
+            list-style: none;
+        }
+
+
+        ol:last-child {
+            li:first-child {
+                border-right: none;
+            }
+        }
+        ul:last-child {
+            border-right: none !important;
+        }
+    }
+}
+
+
+
+.Timer {
+    display: inline-flex;
+    width: 100%;
+    padding-top: 0px;
+    justify-content: center;
+
+
+    div {
+        margin-top: 18px;
+        height: 18px;
+        width: 1px;
+        border-right: 3px solid rgba(255, 255, 255, 1);
+    }
+
+    ol {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        color: white;
+        width: 80px;
+        margin: 0;
+        padding: 0;
+
+        li {
+            width: 80px;
+            overflow: hidden;
+
+            p {
+                width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+
+        }
+
+        li:first-child {
+            font-size: 32px;
+            font-weight: 800;
+            margin-top: 4px;
+        }
+        .Bordered {
+            border-right: 1px solid white !important;
+        }
+    }
+}
+
+
+.Challenge-Timer {
+
+    div {
+        margin-top: 13px;
+        height: 18px;
+        width: 1px;
+        border-right: 3px solid rgba(255, 255, 255, 1);
+    }
+
+    ol {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        color: white;
+        width: 60px;
+        margin: 0;
+        padding: 0;
+
+        li {
+            width: 60px;
+            overflow: hidden;
+            font-size: 9px;
+
+            p {
+                width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+
+        }
+
+        li:first-child {
+            font-size: 28px;
+            font-weight: 800;
+            margin-top: 4px;
+        }
+        .Bordered {
+            border-right: 1px solid white !important;
+        }
+    }
+}
+
+.Confirm-Modal {
+    min-height: 300px;
+    max-height: 300px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    .Modal-Title {
+        width: 100%;
+
+        h3 {
+            width: 100%;
+            text-align: center;
+            font-family: DrukTextWide;
+            font-size: 64px;
+            padding: 50px 0 20px 0;
+        }
+
+    }
+
+    p {
+        width: calc(100% - 50px);
+        text-align: center;
+        padding: 25px;
+        font-weight: 600;
+        font-family: "Open Sans";
+    }
+
+    span {
+        color: #b67fff;
+    }
+}
+
+
+.Conditions-Modal {
+    min-width: 100% !important;
+
+    h1, h2 {
+        color: #fff;
+        color: #cecece;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 10px;
+        color: #cecece;
+    }
+    ul {
+        margin-left: 20px;
+    }
+    a {
+        color: #1a73e8;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+
+    p {
+        width: calc(100% - 50px);
+        text-align: center;
+        padding: 25px;
+        font-weight: 600;
+        font-family: "Open Sans";
+    }
+
+    span {
+        color: #b67fff;
+    }
+}

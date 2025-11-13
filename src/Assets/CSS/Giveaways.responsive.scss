@@ -1,0 +1,90 @@
+@media (max-width: 845px) {
+
+    .Giveaway-card {
+      min-width: 100% !important;
+      max-width: 100% !important;
+
+      .MuiCardMedia-media, .MuiCardMedia-media img {
+        min-width: 50% !important;
+        max-width: 50% !important;
+      }
+    }
+
+
+  .GiveawayList {
+    .GiveawayHeading {
+      font-size: 16px;
+    }
+
+    .jss15 {
+     width: 420px !important;
+    }
+
+    .GiveawayContent {
+      max-width: 90%;
+      padding-right: 20px;
+      float: right;
+
+
+    .Links {
+      li {
+        min-height: 80px;
+        max-height: 80px;
+       }
+    }
+
+      p {
+        width: 80%;
+        margin-left: 8%;
+      }
+    }
+  }
+
+  .Timer ol {
+    width: 70px;
+    li:first-child {
+      font-size: 21px;
+    }
+
+  }
+}
+
+@media (max-width: 600px) {
+
+    .GiveawayList {
+
+        .Giveaway-card {
+          .MuiCardMedia-media, .MuiCardMedia-media img {
+              min-width: 100% !important;
+          }
+        }
+
+         button.GiveawayBtn {
+            min-height: 80px;
+            max-width: 90%;
+            min-width: 90%;
+            margin-left: 5%;
+         }
+
+        .MuiPaper-root {
+            display: flex !important;
+            flex-direction: column !important;
+            min-height: 780px;
+        }
+
+        .makeStyles-cardMedia-14 {
+            min-width: 100%;
+            border-top-right-radius: 30px !important;
+        }
+
+        .MuiCardContent-root, .GiveawayContent {
+            min-width: 100%;
+            border-top-right-radius: 0px !important;
+            border-bottom-right-radius: 30px !important;
+
+            p {
+                width: unset !important;
+            }
+        }
+    }
+}
